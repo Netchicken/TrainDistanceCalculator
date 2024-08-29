@@ -32,7 +32,7 @@
             label2 = new Label();
             label3 = new Label();
             txtKmHour = new TextBox();
-            txtDistance = new TextBox();
+            txtHours = new TextBox();
             lbxOutput = new ListBox();
             btnCalculate = new Button();
             SuspendLayout();
@@ -71,12 +71,12 @@
             txtKmHour.Size = new Size(100, 23);
             txtKmHour.TabIndex = 3;
             // 
-            // txtDistance
+            // txtHours
             // 
-            txtDistance.Location = new Point(150, 67);
-            txtDistance.Name = "txtDistance";
-            txtDistance.Size = new Size(100, 23);
-            txtDistance.TabIndex = 4;
+            txtHours.Location = new Point(150, 67);
+            txtHours.Name = "txtHours";
+            txtHours.Size = new Size(100, 23);
+            txtHours.TabIndex = 4;
             // 
             // lbxOutput
             // 
@@ -95,6 +95,7 @@
             btnCalculate.TabIndex = 6;
             btnCalculate.Text = "Calculate";
             btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // Form1
             // 
@@ -103,7 +104,7 @@
             ClientSize = new Size(286, 247);
             Controls.Add(btnCalculate);
             Controls.Add(lbxOutput);
-            Controls.Add(txtDistance);
+            Controls.Add(txtHours);
             Controls.Add(txtKmHour);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -120,7 +121,7 @@
         private Label label2;
         private Label label3;
         private TextBox txtKmHour;
-        private TextBox txtDistance;
+        private TextBox txtHours;
         private ListBox lbxOutput;
         private Button btnCalculate;
     }
